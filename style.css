@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+:root{
+    --Red: hsl(0, 100%, 68%);
+
+
+
+--Very-Dark-Blue: hsl(230, 29%, 20%);
+--Dark-Grayish-Blue: hsl(230, 11%, 40%);
+--Grayish-Blue: hsl(231, 7%, 65%);
+--Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bggrey{
+    position: absolute;
+    right: 0;
+  height: 50%;
+  width: 50%;
+  background: var(--Light-Grayish-Blue);
+  border-radius: 0 0 0 100px;
+  z-index: -1;
+}
+nav{
+    padding: 0 20px;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.links{
+    
+    width:45%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+.dot{
+    width:7px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: var(--Grayish-Blue);
+}
+.links :nth-child(5){
+    color: var(--Grayish-Blue);
+}
+.main{
+    width: 80%;
+    padding: 0 20px;
+    margin: 100px auto
+    
+  
+}
+.img{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background-image: url("/images/illustration-devices.svg");
+    min-height: 600px;
+    min-width: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.main .use{
+    width: 400px;
+    font-size: 16px;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin:  50px 0 ; 
+   
+ 
+  
+    
+}
+.use h2{
+    height: 30px;
+    width: 75px;
+    border-radius: 20px;
+    background-color:var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+  
+}
+.use h1{
+   color: var(--Grayish-Blue);
+    margin-left: 10px;
+   
+}
+.p1{
+    width: 600px;
+    font-size: 70px;
+    font-family: 'Barlow Condensed';
+    text-transform: uppercase;
+    font-weight: 700;
+ 
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 50px;
+}
+.p2{
+    width: 300px;
+    font-size: 20px;
+    font-family: 'Barlow';
+        color: var(--Grayish-Blue);
+}
+.but{display: block;
+    height: 50px;
+    width: 150px;
+    background-color:var(--Red);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    color: aliceblue;
+    word-spacing: 2px;
+    margin-right: 10px;
+}
+.but:hover{
+    background-color: pink;
+}
+.butt{
+    margin-top: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.butt p{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Barlow Condensed';
+    color: var(--Grayish-Blue);
+}
+@media(max-width:800px){
+    .links {
+        height: 300px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        display:none;
+        flex-direction:column;
+        justify-content: space-evenly;
+        background-color: aliceblue;
+        box-shadow :1px 1px 2px #dfdede;
+    }
+    .dot{
+        width: 200px;
+        height: 1px;
+    }
+    .img{
+        position: absolute;
+        top: 200px;
+        right: 0;
+        background-image: url("/images/illustration-devices.svg");
+        min-height: 300px;
+        min-width: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    
+    }
+    nav{
+        padding: 0;
+        margin-bottom: 500px;
+    }
+    .ham{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        background-image: url("/images/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+    }
+    .links.active{
+        display: flex;
+       
+    }
+    .ham.ac{
+        background-image: url("/images/icon-close.svg");
+    }
+}
